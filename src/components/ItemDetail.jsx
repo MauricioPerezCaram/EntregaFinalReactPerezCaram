@@ -6,7 +6,7 @@ const ItemDetail = ({ item }) => {
       <div className="producto-detalle">
         <img src={item.imagen} alt={item.titulo} />
         <h3 className="titulo">{item.titulo}</h3>
-        <p className="descripcion">{item.descripcion}</p>
+        <p className="descripcion">{item.detalle}</p>
         <p className="categoria">Categoría: {item.categoria}</p>
         <p className="precio">$ {item.precio}</p>
       </div>

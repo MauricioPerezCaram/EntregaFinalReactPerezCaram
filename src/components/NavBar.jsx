@@ -1,34 +1,36 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <a href="#" className="logo">
+      <Link to="/" className="logo">
         <h1>Apple Store Mendoza</h1>
-      </a>
+      </Link>
       <ul className="menu">
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/">
             Inicio
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/iphone">
             iPhone
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/mac">
             Mac
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/watch">
             Watch
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/airpod">
             Airpod
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

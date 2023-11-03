@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
   return (
@@ -7,9 +8,9 @@ const Item = ({ producto }) => {
       <img src={producto.imagen} />
       <p>Precio: $ {producto.precio}</p>
       <p>Categoría: {producto.categoria}</p>
-      <a className="ver-mas" href={`/item/${producto.id}`}>
+      <Link className="ver-mas" to={`/item`}>
         Ver más
-      </a>
+      </Link>
     </div>
   );
 };

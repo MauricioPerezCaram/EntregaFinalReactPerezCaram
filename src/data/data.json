@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "iPhone 15",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://www.infobae.com/new-resizer/yY8fdykKdS6Lw72oH66yBLbXaXE=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQJ3BQSHZBGBO5B5BUXCLXJUM.jpg",
     "precio": 799,
     "detalle": "El iPhone 15 es la última iteración del emblemático teléfono de Apple, con avances en cámara, rendimiento y software, potenciado por una nueva generación de chips. Destaca por su diseño refinado y mejoras en la calidad de imagen, manteniendo el estándar de conectividad."
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "nombre": "iPhone 15 Pro",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://media.gq.com.mx/photos/6322434014fa491dffbfbea8/16:9/w_960,c_limit/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-gold-220907.jpg",
     "precio": 999,
     "detalle": "El iPhone 15 Pro ofrece características premium con avances significativos en fotografía, rendimiento y pantalla. Presenta capacidades avanzadas de cámara, mayor potencia de procesamiento y una pantalla vibrante con tecnología innovadora."
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "nombre": "iPhone 15 Pro Max",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://www.muycomputer.com/wp-content/uploads/2023/03/iPhone-15-Pro-1.jpg",
     "precio": 1199,
     "detalle": "El iPhone 15 Pro Max, la versión de mayor tamaño, ofrece todas las características del Pro en un formato más grande, brindando una experiencia superior para consumir contenido multimedia y una batería de mayor duración."
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "nombre": "iPhone 14",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/02/iPhone_14_Blue_PDP_Image_Position-5_LAES.jpg",
     "precio": 699,
     "detalle": "El iPhone 14 es una evolución en diseño y rendimiento, con mejoras en cámara, rendimiento y software. Introduce nuevas funcionalidades manteniendo la esencia de la línea de iPhones."
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "nombre": "iPhone 14 Pro",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://resizer.iproimg.com/unsafe/880x/filters:format(webp)/https://assets.iprofesional.com/assets/jpg/2023/09/559950.jpg",
     "precio": 899,
     "detalle": "El iPhone 14 Pro incorpora tecnología avanzada de cámara, rendimiento superior y una pantalla de alta calidad, orientada a los usuarios que buscan funcionalidades avanzadas y rendimiento excepcional."
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "nombre": "iPhone 14 Pro Max",
-    "categoria": "iPhone",
+    "categoria": "iphone",
     "imagen": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/02/iPhone_14_Pro_Max_Silver_PDP_Image_Position-8_MXLA.jpg",
     "precio": 999,
     "detalle": "El iPhone 14 Pro Max ofrece todas las características del Pro en un formato más grande, maximizando la experiencia con su pantalla ampliada y una batería de mayor duración."
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "nombre": "MacBook Air",
-    "categoria": "Mac",
+    "categoria": "mac",
     "imagen": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661",
     "precio": 999,
     "detalle": "El MacBook Air es un portátil ultradelgado con una potencia equilibrada y diseño ligero. Destaca por su pantalla de alta resolución, procesador eficiente y duración de la batería extendida."
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "nombre": "MacBook Pro",
-    "categoria": "Mac",
+    "categoria": "mac",
     "imagen": "https://hiraoka.com.pe/media/mageplaza/blog/post/m/a/macbook_air_vs._macbook_pro-_cuales_son_sus_diferencias.jpg",
     "precio": 1499,
     "detalle": "El MacBook Pro es una potente herramienta para profesionales, con un rendimiento excepcional, una pantalla brillante y funciones especializadas como la Touch Bar. Es ideal para trabajos exigentes en diseño, edición y programación."
@@ -91,7 +91,7 @@
   {
     "id": 12,
     "nombre": "Airpods 3ra gen",
-    "categoria": "airpods",
+    "categoria": "airpod",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_975606-MLA71655434077_092023-O.webp",
     "precio": 149,
     "detalle": "Los AirPods de tercera generación (también conocidos como AirPods 3) presentan un diseño similar a los AirPods Pro, con mejor calidad de audio, ajuste más cómodo y soporte para audio espacial Dolby Atmos."
@@ -99,7 +99,7 @@
   {
     "id": 13,
     "nombre": "Airpods Pro",
-    "categoria": "airpods",
+    "categoria": "airpod",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_779146-MLA53778959612_022023-O.webp",
     "precio": 249,
     "detalle": "Los AirPods Pro son auriculares inalámbricos con cancelación activa de ruido, un ajuste más personalizable gracias a sus almohadillas intercambiables y una calidad de audio mejorada, siendo ideales para aquellos que buscan una experiencia auditiva premium."
@@ -107,7 +107,7 @@
   {
     "id": 14,
     "nombre": "Airpods Max",
-    "categoria": "airpods",
+    "categoria": "airpod",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_763092-MLA45715455112_042021-O.webp",
     "precio": 499,
     "detalle": "Los AirPods Max son auriculares supraaurales con cancelación activa de ruido, ofreciendo una calidad de sonido excepcional, materiales de alta gama y una experiencia de escucha premium."

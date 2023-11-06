@@ -1,5 +1,3 @@
-function CartContext() {
-  return <div>CartContext</div>;
-}
+import { createContext } from "react";
 
-export default CartContext;
+export const CartContext = createContext();

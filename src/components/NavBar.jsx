@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import  CartWidget  from "./CartWidget";
+
 
 const NavBar = () => {
   return (
@@ -31,6 +33,9 @@ const NavBar = () => {
           <Link className="menu-link" to="/airpod">
             Airpod
           </Link>
+        </li>
+        <li>
+        <CartWidget/>
         </li>
       </ul>
     </nav>

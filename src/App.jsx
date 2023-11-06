@@ -1,57 +1,22 @@
-import { useState } from "react";
 import "./App.css";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Carrito from "./components/Carrito";
 
 function App() {
-  const [carrito, setCarrito] = useState([]);
-
-  const agregarAlCarrito = (item, cantidad) => {
-    const itemAgregado = { ...item, cantidad };
-    const nuevoCarrito = [...carrito];
-    const estaEnElCarrito = nuevoCarrito.find(
-      (producto) => producto.id === itemAgregado.id
-    );
-
-    if (estaEnElCarrito) {
-      estaEnElCarrito.cantidad += cantidad;
-    } else {
-      nuevoCarrito.push(itemAgregado);
-    }
-    setCarrito(nuevoCarrito);
-  };
-
-  const cantidadEnCarrito = () => {
-    return carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
-  };
-
-  const precioTotal = () => {
-    return carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0);
-  };
-
-  const vaciarCarrito = () => {
-    setCarrito([]);
-  };
-
   return (
     <div>
-      <CartContext.Provider value = ((carrito, agregarAlCarrito, cantidadEnCarrito)) >
-        
-    
-        <BrowserRouter>
-          <NavBar />
+      <BrowserRouter>
+        <NavBar />
 
-          <Routes>
-            <Route path="/" element={<ItemListContainer />} />
-            <Route path="/item/:id" element={<ItemDetailContainer />} />
-            <Route path="/:categoria" element={<ItemListContainer />} />
-            <Route path="/carrito" element={<Carrito />} />
-          </Routes>
-        </BrowserRouter>
-        </CartContext.Provider>
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          {/* <Route path="/productos" element={<ItemListContainer />} /> */}
+          <Route path="/:categoria" element={<ItemListContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

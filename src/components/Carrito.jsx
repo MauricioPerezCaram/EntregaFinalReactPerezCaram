@@ -1,35 +1,41 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 function Carrito() {
-  const { carrito, precioTotal, vaciarCarrito } = useContext();
+  const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
+
   const handleVaciar = () => {
     vaciarCarrito();
   };
 
   return (
     <div className="container">
-      <h1 className="main-title">Carrito</h1>
-
-      {carrito.map((prod) => (
-        <div key={prod.id}>
-          <h3>{prod.nombre}</h3>
-          <p>Precio: $ {prod.precio}</p>
-          <p>Cantidad agregada al carrito: {prod.cantidad}</p>
-          <p>Precio total: ${prod.precio * prod.cantidad} </p>
-          <br></br>
-        </div>
-      ))}
-
+      <h1>Carrito</h1>
       {carrito.length > 0 ? (
-        <div>
-          <h2>Total: $ {precioTotal()}</h2>
-          <button onClick={handleVaciar}>Vaciar Carrito</button>
-        </div>
+        carrito.map((prod) => (
+          <div key={prod.id}>
+            <h3>{prod.nombre}</h3>
+            <p>$ {prod.precio}</p>
+            <p>Cantidad: {prod.cantidad}</p>
+            <p>Total: $ {prod.precio * prod.cantidad}</p>
+          </div>
+        ))
       ) : (
-        <h2>El carrito está vacío</h2>
+        <h2>Agrega algo al carrito</h2>
+      )}
+      {carrito.length > 0 && (
+        <>
+          <h2>Total agregado al carrito: $ {precioTotal()}</h2>
+          <button onClick={handleVaciar}>Vaciar carrito</button>
+        </>
       )}
     </div>
   );
 }
 
 export default Carrito;
+
+{
+  /* <h2>Total agregado al carrito: $ {precioTotal()}</h2>
+<button onClick={handleVaciar}>Vaciar Carrito</button> */
+}

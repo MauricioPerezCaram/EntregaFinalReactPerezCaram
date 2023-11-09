@@ -12,8 +12,22 @@
 
 .container {
   max-width: 1200px;
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
   margin: 0 auto;
+}
+
+.checkout {
+  max-width: 800px;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.checkout img {
+  height: 220px;
 }
 
 .main-title {
@@ -53,7 +67,7 @@
 
 .productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-block: 2rem;
 }
@@ -75,14 +89,15 @@
 
 .producto > img {
   width: 100%;
-  height: 180px;
+  height: 220px;
 }
 
-.producto .ver-mas {
+.ver-mas {
   text-decoration: none;
   background-color: var(--clr-main);
   color: white;
   padding: 0.5rem;
+  margin-top: 0.5rem;
   width: max-content;
   border-radius: 0.5rem;
   transition: 0.2s;
@@ -95,13 +110,14 @@
 
 .producto-detalle {
   padding-block: 2rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
 }
 
 .producto-detalle img {
-  width: 100%;
+  width: 300px;
 }
 
 .producto-detalle-info h3 {
@@ -115,8 +131,12 @@
 }
 
 .precio {
-  font-size: 2rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stock {
+  font-size: 1rem;
   font-weight: 600;
 }
 

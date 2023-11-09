@@ -3,9 +3,8 @@ import ItemCount from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({ item }) => {
+  const { carrito, agregarAlCarrito } = useContext(CartContext);
 
-  const {carrito, agregarAlCarrito} = useContext(CartContext)
-  
   const [cantidad, setCantidad] = useState(1);
 
   const handleRestar = () => {
@@ -22,14 +21,16 @@ const ItemDetail = ({ item }) => {
         <img src={item.imagen} alt={item.titulo} />
         <h3 className="titulo">{item.titulo}</h3>
         <p className="descripcion">{item.detalle}</p>
-        <p className="categoria">Categoría: {item.categoria}</p>
-        <p className="descripcion">Stock {item.stock}</p>
+        <p className="stock">Categoría: {item.categoria}</p>
+        <p className="stock">Stock {item.stock}</p>
         <p className="precio">$ {item.precio}</p>
         <ItemCount
           cantidad={cantidad}
           handleSumar={handleSumar}
           handleRestar={handleRestar}
-          handleAgregar={() => {agregarAlCarrito(item, cantidad)}}
+          handleAgregar={() => {
+            agregarAlCarrito(item, cantidad);
+          }}
         />
       </div>
     </div>

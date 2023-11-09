@@ -37,6 +37,9 @@ const NavBar = () => {
         <li>
         <CartWidget/>
         </li>
+        <li>
+        <img src="/logocarrito.png" alt="logocarrito" width={60} to="/carrito"/>
+        </li>
       </ul>
     </nav>
   );

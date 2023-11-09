@@ -9,9 +9,11 @@ function CartWidget() {
   return (
     <div>
       <Link className="menu-link" to="/carrito">
-        Carrito
+        Productos agregados
         <span className="numerito"> {cantidadEnCarrito()}</span>
+
       </Link>
+
     </div>
   );
 }

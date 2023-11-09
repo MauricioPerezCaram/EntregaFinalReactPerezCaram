@@ -1,6 +1,7 @@
 # Getting Started with Create React App
+
 Hola! Bienvenido a mi aplicación.
-Al ver tantas tiendas online que comercializan la marca Apple en mi Provincia (Mendoza), noté que no cuentan con página web y solamente cuentan con Instagram. Es por ello que decidí hacer este proyecto sobre ese tipo de tiendas en específico, con la intención de poder ofrecerla.
+Al ver tantas tiendas online que comercializan la marca Apple en mi Provincia (Mendoza), noté que no cuentan con página web y solamente cuentan con Instagram. Es por ello que decidí hacer este proyecto sobre ese tipo de tiendas en específico, con la intención de luego poder ofrecerlo.
 El proyecto se encuentra desarrollado con create-react-app
 Al iniciar el poyecto es necesario instalar npm utilizando el comando "npm install" en la terminal, y el mismo se inicia con el comando "npm start".
 A su vez, se utiliza una base de datos en Firestore.

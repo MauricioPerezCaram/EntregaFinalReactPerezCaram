@@ -77,6 +77,9 @@
   flex-direction: column;
   border-radius: 1px;
   overflow: hidden;
+  font-size: 1rem;
+  font-weight: 570;
+  gap: 5px;
 }
 
 .producto > div {
@@ -140,6 +143,11 @@
   font-weight: 600;
 }
 
+.descripcion {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .item-count {
   display: flex;
   align-items: center;
@@ -176,7 +184,7 @@
 
 .agregar-al-carrito,
 .enviar {
-  width: auto;
+  width: 50%;
   height: auto;
   margin-top: 1rem;
   padding: 1rem;
@@ -185,8 +193,14 @@
 .formulario {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
+.formulario button {
+  width: 285px;
 }
 
 .formulario input {

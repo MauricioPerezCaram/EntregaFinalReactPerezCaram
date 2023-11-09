@@ -37,7 +37,7 @@ const Checkout = () => {
   }
 
   return (
-    <div className="container">
+    <div className="formulario">
       <h1 className="main-title">Finalizar compra</h1>
       <form className="formulario" onSubmit={handleSubmit(comprar)}>
         <input

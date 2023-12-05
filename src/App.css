@@ -215,3 +215,51 @@
   border: 2px solid var(--clr-main);
   outline: 2px solid var(--clr-main);
 }
+
+@media screen and (max-width: 768px) {
+  .checkout {
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .producto img {
+    height: 150px;
+  }
+
+  .producto-detalle img {
+    width: 100%;
+  }
+
+  .formulario input {
+    width: 100%;
+  }
+
+  .item-count button,
+  .agregar-al-carrito,
+  .enviar {
+    width: 100%;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
+
+  /* Ajustes específicos para el navbar en pantallas más pequeñas */
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    width: 100%;
+    background-color: var(--clr-main);
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -11,17 +11,22 @@ function Carrito() {
 
   return (
     <div className="checkout">
-      <h1>Produtos agregados al carrito</h1>
-      {carrito.map((prod) => (
-        <div key={prod.id}>
-          <h3>{prod.nombre}</h3>
-          <img src={prod.imagen} alt="producto" />
-          <p>$ {prod.precio}</p>
-          <p>Cantidad de productos seleccionados: {prod.cantidad}</p>
-          <p>Total: $ {prod.precio * prod.cantidad}</p>
-        </div>
-      ))}
+      <h1>Productos agregados al carrito</h1>
       {carrito.length > 0 ? (
+        carrito.map((prod) => (
+          <div key={prod.id} className="producto">
+            <h3>{prod.nombre}</h3>
+            <img src={prod.imagen} alt="producto" />
+            <p>$ {prod.precio}</p>
+            <p>Cantidad de productos seleccionados: {prod.cantidad}</p>
+            <p>Total: $ {prod.precio * prod.cantidad}</p>
+          </div>
+        ))
+      ) : (
+        <h2>No has agregado productos al carrito aún</h2>
+      )}
+
+      {carrito.length > 0 && (
         <>
           <h2>Total agregado al carrito: $ {precioTotal()}</h2>
           <button onClick={handleVaciar} className="agregar-al-carrito">
@@ -31,8 +36,6 @@ function Carrito() {
             Finalizar compra
           </Link>
         </>
-      ) : (
-        <h2>Carrito esta vacio</h2>
       )}
     </div>
   );

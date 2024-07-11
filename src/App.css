@@ -17,21 +17,19 @@
 }
 
 .checkout {
-  max-width: 800px;
-  padding-inline: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 2rem;
   margin: auto;
   margin-top: 30px;
 }
 
-.checkout img {
-  height: 220px;
-}
-
 .main-title {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
@@ -70,16 +68,22 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-block: 2rem;
+  justify-items: center;
 }
 
 .producto {
+  max-width: fit-content;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
-  border-radius: 1px;
+  align-items: center;
   overflow: hidden;
   font-size: 1rem;
   font-weight: 570;
-  gap: 5px;
+  gap: 1px;
+  border-radius: 8px;
+  border: solid #f0ecec;
+  padding: 10px;
 }
 
 .producto > div {
@@ -88,11 +92,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center; /* Centra horizontalmente */
 }
 
 .producto > img {
-  width: 100%;
-  height: 220px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .ver-mas {
@@ -112,11 +118,16 @@
 }
 
 .producto-detalle {
-  padding-block: 2rem;
   display: flex;
   flex-direction: column;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  align-items: center;
+  /* background-color: aqua; */
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.producto-detalle p {
+  width: 60%;
 }
 
 .producto-detalle img {
@@ -152,42 +163,51 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  font-size: 1.2rem; /* Ajusta el tamaño del texto según tu diseño */
 }
 
-.item-count button,
-.agregar-al-carrito,
-.enviar {
-  background-color: var(--clr-main);
-  border: 0;
-  width: 2rem;
-  height: 2rem;
-  color: white;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 1rem;
+.item-count p {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  line-height: 1;
-  border: 2px solid var(--clr-main);
-  transition: 0.2s;
 }
 
-.item-count button:hover,
-.agregar-al-carrito:hover,
-.enviar:hover {
-  background-color: white;
-  color: black;
+.item-count button {
+  width: 60px;
+  height: 40px;
+  background-color: var(--clr-main);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.item-count button:hover {
+  background-color: black;
 }
 
 .agregar-al-carrito,
 .enviar {
-  width: 50%;
+  width: 100%;
+  text-decoration: none;
+  max-width: 275px;
   height: auto;
   margin-top: 1rem;
   padding: 1rem;
+  text-align: center;
+  background-color: var(--clr-main);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.agregar-al-carrito:hover,
+.enviar:hover {
+  background-color: black;
+  color: white;
 }
 
 .formulario {
@@ -216,18 +236,21 @@
   outline: 2px solid var(--clr-main);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1070px) {
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 780px) {
   .checkout {
     max-width: 100%;
     padding-inline: 1rem;
   }
 
   .productos {
+    max-width: 100%;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .producto img {
-    height: 150px;
   }
 
   .producto-detalle img {
@@ -248,7 +271,6 @@
     width: 100%;
   }
 
-  /* Ajustes específicos para el navbar en pantallas más pequeñas */
   .navbar {
     padding: 1rem;
     flex-direction: column;
@@ -261,5 +283,13 @@
   .menu {
     flex-direction: column;
     gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
   }
 }
